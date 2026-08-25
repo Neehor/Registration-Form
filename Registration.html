@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSSreg.css">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<form name="RegForm" method="post" id="registration" class="registration">
+
+    <H2 id="title">Регистрация</H2>
+
+    <div class="container firstName">
+        <label for="first-name">Имя</label>
+        <input id="first-name" type="text" class="invalid" name="first_name"/>
+    </div>
+
+    <div id="first-name-val" class="errorMessage">
+        Только кирилица, не более 12 букв
+    </div>
+
+    <div class="container">
+        <label for="last-name">Фамилия</label>
+        <input id="last-name" type="text" class="invalid" name="last_name"/>
+    </div>
+
+    <div id="last-name-val" class="errorMessage">
+        Только кирилица, не более 12 букв
+    </div>
+
+    <div class="container">
+        <label for="birth-day">Дата рождения</label>
+        <input id="birth-day" type="date" class="invalid" name="birth_day"/>
+    </div>
+
+    <div id="birth-day-val" class="errorMessage">
+        Вам меньше 18 лет
+    </div>
+
+    <div class="container">
+        <label for="email">Email</label>
+        <input id="email" type="email" class="invalid" name="email"/>
+    </div>
+
+    <div id="email-val" class="errorMessage">
+        Введите email в формате user@example.com
+    </div>
+
+    <div class="container">
+        <label for="password">Пароль</label>
+        <input id="password" type="password" class="invalid" name="password"/>
+    </div>
+
+    <div id="password-val" class="errorMessage">
+        Длина больше 8 символов, должен содержать минимум одну цифру,одну заглавные и строчной
+        буквы и один символ
+    </div>
+
+    <div class="container" id="pass">
+        <label for="confirm-password">Подтверждение пароля</label>
+        <input id="confirm-password" type="password" class="invalid" name="confirm_password"/>
+    </div>
+
+    <div id="confirm-password-val" class="errorMessage">
+        Длина больше 8 символов, должен содержать минимум одну цифру,одну заглавные и строчной
+        буквы и один символ
+    </div>
+
+    <div id="check-password-val" class="errorMessage">
+        Пароли не совпадают
+    </div>
+
+    <div id="button-bar">
+        <input type="reset" class="button" value="СБРОСИТЬ" id="form-button-reset"/>
+        <input type="submit" class="button" value="ОТПРАВИТЬ" id="form-button" disabled/>
+    </div>
+</form>
+
+<!--ToDo Сделать видимыми пароли кнопку-->
+
+<script src="JSreg.js" type="module"></script>
+<script src="fetchReg.js" type="module"></script>
+</body>
+</html>
