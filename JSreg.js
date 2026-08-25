@@ -3,31 +3,15 @@
 import {validator} from "./validator.js";
 
 const registrationForm = document.forms["RegForm"]
-const name = document.getElementById('first-name')
-const surName = document.getElementById('last-name')
-const email = document.getElementById('email')
 const pass = document.getElementById('password')
 const passConfirm = document.getElementById('confirm-password')
-const day = document.getElementById('birth-day')
-
 const passCheckValidation = document.getElementById('check-password-val')
 
-
-const Maria = document.getElementById('Maria')
-
 function validateFormCheck() {
-    // let validateCheck = true
-    // for (let input of registrationForm) {
-    //     if (input.getAttribute('class') !== "button") {
-    //         if (!input.classList.contains('valid')) validateCheck = false
-    //     }
-    // } every     console.log(Array.from(registrationForm))
-    if (name.classList.contains('valid') && surName.classList.contains('valid') && day.classList.contains('valid')
-        && pass.classList.contains('valid') && passConfirm.classList.contains('valid')
-        && email.classList.contains('valid') && pass.value === passConfirm.value)
-    {
-        document.getElementById('form-button').disabled = false;
-    } else document.getElementById('form-button').disabled = true;
+    const inputs = Array.from(registrationForm).slice(0,6);
+    const validationResult = inputs.every((input)=>input.classList.contains('valid'));
+
+    document.getElementById('form-button').disabled = !(validationResult && pass.value === passConfirm.value);
 }
 
 registrationForm.addEventListener('input', function (event) {
