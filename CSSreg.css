@@ -42,8 +42,12 @@ label {
     margin-top: 24px;
 }
 
-#pass{
+#passContainer{
     margin-top: 16px;
+}
+
+.passContainer {
+    position: relative;
 }
 
 #registration input:not([class="button"]) {
@@ -86,4 +90,20 @@ input:not([id|="form"]) {
     background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
     color: light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
     border-color: light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
+}
+
+button {
+    background-image: url('./icon/eye-crossed.svg');
+    height: 19px;
+    width: 19px;
+    padding: 0;
+    border: none;
+    position: absolute;
+    right: 9px;
+    top: 32px;
+    background-color: #ffffff;
+}
+
+.open {
+    background-image: url('./icon/eye.svg');
 }
