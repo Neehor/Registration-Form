@@ -6,7 +6,7 @@
     color: #1c2024;
 }
 
-body{
+body {
     background-color: #f7f7f7;
 }
 
@@ -42,7 +42,7 @@ label {
     margin-top: 24px;
 }
 
-#passContainer{
+#passContainer {
     margin-top: 16px;
 }
 
@@ -68,7 +68,7 @@ input {
     color: #990000;
 }
 
-.button{
+.button {
     width: 48%;
     height: 44px;
     margin-top: 24px;
@@ -77,8 +77,11 @@ input {
     background-color: #ffffff;
 }
 
-#form-button{
+#form-button {
     float: right;
+    background-color: #0b57d0;
+    color: #fffff7;
+    border-color: #0b57d0;
 }
 
 input:not([id|="form"]) {

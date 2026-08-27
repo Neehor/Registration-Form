@@ -6,6 +6,7 @@ const registrationForm = document.forms["RegForm"]
 const pass = document.getElementById('password')
 const passConfirm = document.getElementById('confirm-password')
 const passCheckValidation = document.getElementById('check-password-val')
+const clearButton = document.getElementById('form-button-reset')
 
 
 registrationForm.addEventListener('input', function (event) {
@@ -36,11 +37,9 @@ registrationForm.addEventListener('focusout', function (event) {
 
 registrationForm.addEventListener('click', (event) => showPassword(event))
 
-const clearButton = document.getElementById('form-button-reset')
 clearButton.addEventListener('click', (event) => clearForm(event))
 
-
-function clearForm(event = "") {
+export function clearForm(event = "") {
     document.getElementById('form-button').disabled = true;
     if (event) event.stopPropagation();
 
@@ -59,10 +58,9 @@ function clearForm(event = "") {
 }
 
 function validateFormCheck() {
-    const inputs = Array.from(registrationForm).filter((element)=> element.tagName === "INPUT"
-        && element.type !== "submit" &&  element.type !== "reset");
-    const validationResult = inputs.every((input)=>input.classList.contains('valid'));
-    console.log(inputs)
+    const inputs = Array.from(registrationForm).filter((element) => element.tagName === "INPUT"
+        && element.type !== "submit" && element.type !== "reset");
+    const validationResult = inputs.every((input) => input.classList.contains('valid'));
     document.getElementById('form-button').disabled = !(validationResult && pass.value === passConfirm.value);
 }
 
@@ -71,11 +69,8 @@ function showPassword(event) {
     const currentButton = event.target;
     const currentInput = document.getElementById(`${currentButton.id}word`)
     const value = currentInput.value;
-    currentInput.type = currentInput.type === 'password'? 'text' : 'password';
+    currentInput.type = currentInput.type === 'password' ? 'text' : 'password';
     currentInput.value = value;
     currentButton.classList.toggle('open');
 }
-
-
-export {clearForm}
 
