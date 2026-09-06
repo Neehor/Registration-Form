@@ -20,7 +20,7 @@ Open `registration.html` in your browser.
 
 ## 📌 Project requirements
 
-- Registration form with:
+- Registration form fields:
   - First Name
   - Last Name
   - Email
@@ -32,32 +32,30 @@ Open `registration.html` in your browser.
 - Submit button remains disabled until the entire form is valid
 - Clear validation messages for users
 - `valid` and `invalid` classes applied to form elements
-- Password strength validation
-- Password confirmation matching
-- Email format validation
-- Minimum age requirement of 18 years
-- Reasonable length restrictions for name fields
 - Semantic HTML form structure
 - No JavaScript frameworks
 - No third-party libraries
+- Id naming convention for form elements:
+  - first-name
+  - last-name
+  - email
+  - password
+  - password-confirm
+  - birth-day
+  - form-button
+- Validation message elements also have their own `id` attributes.
 
 ## 📋 Validation Rules
 
-### First Name
+All fields are required
 
-- Required
-- Only characters allowed for names
-- Must have a reasonable length
+### First Name & Last Name
 
-### Last Name
-
-- Required
-- Only characters allowed for names
+- Allowed characters: cyrillic letters, spaces, hyphens and apostrophes
 - Must have a reasonable length
 
 ### Email
 
-- Required
 - Must contain a valid email address
 
 ### Password
@@ -72,37 +70,17 @@ The password must:
 
 ### Password Confirmation
 
-- Required
 - Must exactly match the password
 
 ### Date of Birth
 
-- Required
 - The user must be at least 18 years old at the time of registration
 
 ## 🔎 Validation Behavior
 
 Validation messages are displayed next to the corresponding fields to help the user understand and correct errors, after the corresponding form element loses focus.
 
-The **Submit** button remains disabled until all form fields contain valid values.
-
 As soon as the entire form becomes valid, the button is enabled automatically — the user does not need to click outside the form or perform any additional action.
-
-## 🆔 Element IDs
-
-The project follows the required naming convention for form elements:
-
-```text
-first-name
-last-name
-email
-password
-password-confirm
-birth-day
-form-button
-```
-
-Validation message elements also have their own `id` attributes.
 
 ## 🛠️ Technologies
 
