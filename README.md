@@ -1,4 +1,3 @@
-````md
 # Registration Form Validation
 
 A small front-end pet project that demonstrates how to build and validate a registration form using **HTML, CSS, and vanilla JavaScript**.
@@ -80,7 +79,6 @@ Each form element receives one of the following classes:
 
 ```css
 .valid
-````
 
 when the value is valid, or:
 
