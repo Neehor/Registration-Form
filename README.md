@@ -6,6 +6,26 @@ It was developed as a technical test assignment based on a set of specific requi
 The assignment required user-friendly error messages and semantic HTML, implemented from scratch     
 using only CSS and vanilla JavaScript, without any external libraries.
 
+## 🚀 Getting Started
+
+No build tools or package managers are required.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Neehor/Registration-Form.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd registration-form
+```
+
+Open `registration.html` in your browser.
+
+Alternatively, the project can be served using any local static HTTP server.
+
 ## ✨ Project requirements
 
 - Registration form with:
@@ -103,26 +123,6 @@ Validation message elements also have their own `id` attributes.
 * **Vanilla JavaScript**
 * No frameworks
 * No external dependencies
-
-## 🚀 Getting Started
-
-No build tools or package managers are required.
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Neehor/Registration-Form.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd registration-form
-```
-
-Open `registration.html` in your browser.
-
-Alternatively, the project can be served using any local static HTTP server.
 
 ## ✅ HTML Validation
 
