@@ -1,8 +1,10 @@
 # Registration Form
 
-The project represents a registration form with custom data validation on the client side. It was developed as a technical test assignment based on a set of specific requirements and constraints.
+The project represents a registration form with custom data validation on the client side.    
+It was developed as a technical test assignment based on a set of specific requirements and constraints.
 
-The assignment required user-friendly error messages and semantic HTML, implemented from scratch using only CSS and vanilla JavaScript, without any external libraries.
+The assignment required user-friendly error messages and semantic HTML, implemented from scratch     
+using only CSS and vanilla JavaScript, without any external libraries.
 
 ## ✨ Project requirements
 
