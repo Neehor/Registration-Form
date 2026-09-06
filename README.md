@@ -2,9 +2,9 @@
 
 A small front-end pet project that demonstrates how to build and validate a registration form using **HTML, CSS, and vanilla JavaScript**.
 
-The project focuses on client-side form validation, user-friendly error messages, semantic HTML, and browser compatibility — without using any JavaScript frameworks.
+The project focuses on client-side form validation, user-friendly error messages, semantic HTML — without using any JavaScript frameworks.
 
-## ✨ Features
+## ✨ Project requirements
 
 - Registration form with:
   - First Name
@@ -14,7 +14,6 @@ The project focuses on client-side form validation, user-friendly error messages
   - Password Confirmation
   - Date of Birth
 - Client-side validation using vanilla JavaScript
-- Validation triggered when an input loses focus
 - Real-time form state tracking
 - Submit button remains disabled until the entire form is valid
 - Clear validation messages for users
@@ -73,22 +72,7 @@ The password must:
 
 ## 🔎 Validation Behavior
 
-Validation is performed after the user enters a value and the corresponding form element loses focus.
-
-Each form element receives one of the following classes:
-
-```css
-.valid
-
-when the value is valid, or:
-
-```css
-.invalid
-```
-
-when the value is invalid.
-
-Validation messages are displayed next to the corresponding fields to help the user understand and correct errors.
+Validation messages are displayed next to the corresponding fields to help the user understand and correct errors, after the corresponding form element loses focus.
 
 The **Submit** button remains disabled until all form fields contain valid values.
 
@@ -152,14 +136,6 @@ cd registration-form
 Open `registration.html` in your browser.
 
 Alternatively, the project can be served using any local static HTTP server.
-
-## 🌐 Browser Support
-
-The project is designed to work correctly in the latest versions of:
-
-* Google Chrome
-* Mozilla Firefox
-* Microsoft Edge
 
 ## ✅ HTML Validation
 
