@@ -3,8 +3,8 @@
 The project represents a registration form with custom data validation on the client side.    
 It was developed as a technical test assignment based on a set of specific requirements and constraints.
 
-The assignment required user-friendly error messages and semantic HTML, implemented from scratch     
-using only CSS and vanilla JavaScript, without any external libraries.
+The assignment required user-friendly error messages and semantic **HTML**, implemented from scratch     
+using only **CSS** and vanilla **JavaScript**, without any external libraries.
 
 ## 🚀 Getting Started
 
@@ -18,7 +18,7 @@ git clone https://github.com/Neehor/Registration-Form.git
 
 Open `registration.html` in your browser.
 
-## ✨ Project requirements
+## 📌 Project requirements
 
 - Registration form with:
   - First Name
@@ -38,10 +38,6 @@ Open `registration.html` in your browser.
 - Minimum age requirement of 18 years
 - Reasonable length restrictions for name fields
 - Semantic HTML form structure
-- Compatible with modern versions of:
-  - Chrome
-  - Firefox
-  - Edge
 - No JavaScript frameworks
 - No third-party libraries
 
@@ -140,17 +136,3 @@ This project was created to practice:
 * Form state management
 * User-friendly validation feedback
 * Writing clean, framework-free JavaScript
-
-## 📌 Requirements
-
-The project intentionally does **not** use JavaScript frameworks or third-party validation libraries.
-
-All validation logic is implemented from scratch using native browser APIs and vanilla JavaScript.
-
-## 📄 License
-
-This project is created for educational and portfolio purposes.
-
-```
-```
-
