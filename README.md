@@ -2,9 +2,7 @@
 
 The project represents a registration form with custom data validation on the client side. It was developed as a technical test assignment based on a set of specific requirements and constraints.
 
-A small front-end pet project that demonstrates how to build and validate a registration form using **HTML, CSS, and vanilla JavaScript**.
-
-The project focuses on client-side form validation, user-friendly error messages, semantic HTML — without using any JavaScript frameworks.
+The assignment required user-friendly error messages and semantic HTML, implemented from scratch using only CSS and vanilla JavaScript, without any external libraries.
 
 ## ✨ Project requirements
 
