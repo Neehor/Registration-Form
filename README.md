@@ -16,15 +16,7 @@ Clone the repository:
 git clone https://github.com/Neehor/Registration-Form.git
 ```
 
-Navigate to the project directory:
-
-```bash
-cd Registration-Form
-```
-
 Open `registration.html` in your browser.
-
-Alternatively, the project can be served using any local static HTTP server.
 
 ## ✨ Project requirements
 
