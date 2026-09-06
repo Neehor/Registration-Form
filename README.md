@@ -19,7 +19,7 @@ git clone https://github.com/Neehor/Registration-Form.git
 Navigate to the project directory:
 
 ```bash
-cd registration-form
+cd Registration-Form
 ```
 
 Open `registration.html` in your browser.
