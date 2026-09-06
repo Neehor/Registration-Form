@@ -1,6 +1,6 @@
 # Registration Form
 
-This project represents the client-side part of a registration form with data validation on the user side. It implements the standard pattern of collecting and primarily validating client information before sending it to the server.
+The project represents a registration form with custom data validation on the client side. It was developed as a technical test assignment based on a set of specific requirements and constraints.
 
 A small front-end pet project that demonstrates how to build and validate a registration form using **HTML, CSS, and vanilla JavaScript**.
 
@@ -103,21 +103,6 @@ Validation message elements also have their own `id` attributes.
 * **Vanilla JavaScript**
 * No frameworks
 * No external dependencies
-
-## 📁 Project Structure
-
-```text
-Registration-Form/
-├── registration.html
-├── CSSreg.css
-├── icon/
-│   └── eye.svg
-│   └── eye-crossed.svg
-├── JSreg.js
-├── validator.js
-├── fetchReg.js
-└── README.md
-```
 
 ## 🚀 Getting Started
 
