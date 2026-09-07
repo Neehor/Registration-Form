@@ -35,14 +35,7 @@ Open `registration.html` in your browser.
 - Semantic HTML form structure
 - No JavaScript frameworks
 - No third-party libraries
-- Id naming convention for form elements:
-  - first-name
-  - last-name
-  - email
-  - password
-  - password-confirm
-  - birth-day
-  - form-button
+- Id naming convention for form elements
 - Validation message elements also have their own `id` attributes.
 
 ## 📋 Validation Rules
@@ -61,7 +54,6 @@ All fields are required
 ### Password
 
 The password must:
-
 - Contain at least 8 characters
 - Contain at least one digit
 - Contain at least one uppercase letter
