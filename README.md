@@ -70,17 +70,9 @@ The password must:
 
 ## 🔎 Validation Behavior
 
-Validation messages are displayed next to the corresponding fields to help the user understand and correct errors, after the corresponding form element loses focus.
+Validation messages are displayed next to the relevant fields to help the user understand and correct errors, after the form element loses focus.
 
 As soon as the entire form becomes valid, the button is enabled automatically — the user does not need to click outside the form or perform any additional action.
-
-## 🛠️ Technologies
-
-* **HTML5**
-* **CSS3**
-* **Vanilla JavaScript**
-* No frameworks
-* No external dependencies
 
 ## ✅ HTML Validation
 
@@ -98,7 +90,7 @@ This project was created to practice:
 
 * HTML5 form structure
 * Semantic markup
-* Native HTML input types
+* Native HTML input attributes
 * Client-side form validation
 * JavaScript event handling
 * DOM manipulation
@@ -106,3 +98,4 @@ This project was created to practice:
 * Form state management
 * User-friendly validation feedback
 * Writing clean, framework-free JavaScript
+* CSS styling and layout
