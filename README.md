@@ -6,6 +6,22 @@ It was developed as a technical test assignment based on a set of specific requi
 The assignment required user-friendly error messages and semantic **HTML**, implemented from scratch     
 using only **CSS** and vanilla **JavaScript**, without any external libraries.
 
+## 🎯 My Goals
+
+This project was created to practice:
+
+* HTML5 form structure
+* Semantic markup
+* Native HTML input attributes
+* Client-side form validation
+* JavaScript event handling
+* DOM manipulation
+* Regular expressions
+* Form state management
+* User-friendly validation feedback
+* Writing clean, framework-free JavaScript
+* CSS styling and layout
+
 ## 🚀 Getting Started
 
 No build tools or package managers are required.
@@ -36,7 +52,13 @@ Open `registration.html` in your browser.
 - No JavaScript frameworks
 - No third-party libraries
 - Id naming convention for form elements
-- Validation message elements also have their own `id` attributes.
+- Validation message elements also have their own `id` attributes
+
+## 🔎 Validation Behavior
+
+Validation messages are displayed next to the relevant fields to help the user understand and correct errors, after the form element loses focus.
+
+As soon as the entire form becomes valid, the button is enabled automatically — the user does not need to click outside the form or perform any additional action.
 
 ## 📋 Validation Rules
 
@@ -68,12 +90,6 @@ The password must:
 
 - The user must be at least 18 years old at the time of registration
 
-## 🔎 Validation Behavior
-
-Validation messages are displayed next to the relevant fields to help the user understand and correct errors, after the form element loses focus.
-
-As soon as the entire form becomes valid, the button is enabled automatically — the user does not need to click outside the form or perform any additional action.
-
 ## ✅ HTML Validation
 
 The HTML markup is intended to comply with modern HTML standards and can be checked using the [W3C Markup Validator](https://validator.w3.org/).
@@ -83,19 +99,3 @@ The project aims to have:
 * No validation errors
 * No unnecessary warnings
 * Semantic and valid HTML markup
-
-## 🎯 Project Goals
-
-This project was created to practice:
-
-* HTML5 form structure
-* Semantic markup
-* Native HTML input attributes
-* Client-side form validation
-* JavaScript event handling
-* DOM manipulation
-* Regular expressions
-* Form state management
-* User-friendly validation feedback
-* Writing clean, framework-free JavaScript
-* CSS styling and layout
