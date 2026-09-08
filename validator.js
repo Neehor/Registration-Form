@@ -5,9 +5,9 @@ function validator(id, value) {
     switch (id) {
 
         case 'first-name':
-            if (/^[а-яё]+$/i.test(value) || /[-']/.test(value)) {
+            if (/^[а-яё\s-']+$/i.test(value)) {
                 if (value[0] === value[0].toUpperCase()) {
-                    if (value.length < 30 && value.length > 3) {
+                    if (value.length < 30 && value.length > 0) {
                         return "valid";
                     }
                 }
@@ -15,9 +15,9 @@ function validator(id, value) {
             return "invalid";
 
         case 'last-name':
-            if (/^[а-яё]+$/i.test(value) || /[-']/.test(value)) {
+            if (/^[а-яё\s-']+$/i.test(value)) {
                 if (value[0] === value[0].toUpperCase()) {
-                    if (value.length < 30 && value.length > 3) {
+                    if (value.length < 30 && value.length > 0) {
                         return "valid";
                     }
                 }

@@ -3,32 +3,11 @@
 import {validator} from "./validator.js";
 
 const registrationForm = document.forms["RegForm"]
-const name = document.getElementById('first-name')
-const surName = document.getElementById('last-name')
-const email = document.getElementById('email')
 const pass = document.getElementById('password')
 const passConfirm = document.getElementById('confirm-password')
-const day = document.getElementById('birth-day')
-
 const passCheckValidation = document.getElementById('check-password-val')
+const clearButton = document.getElementById('form-button-reset')
 
-
-const Maria = document.getElementById('Maria')
-
-function validateFormCheck() {
-    // let validateCheck = true
-    // for (let input of registrationForm) {
-    //     if (input.getAttribute('class') !== "button") {
-    //         if (!input.classList.contains('valid')) validateCheck = false
-    //     }
-    // } every     console.log(Array.from(registrationForm))
-    if (name.classList.contains('valid') && surName.classList.contains('valid') && day.classList.contains('valid')
-        && pass.classList.contains('valid') && passConfirm.classList.contains('valid')
-        && email.classList.contains('valid') && pass.value === passConfirm.value)
-    {
-        document.getElementById('form-button').disabled = false;
-    } else document.getElementById('form-button').disabled = true;
-}
 
 registrationForm.addEventListener('input', function (event) {
     const currentInput = event.target;
@@ -56,11 +35,11 @@ registrationForm.addEventListener('focusout', function (event) {
     }
 })
 
-const clearButton = document.getElementById('form-button-reset')
+registrationForm.addEventListener('click', (event) => showPassword(event))
+
 clearButton.addEventListener('click', (event) => clearForm(event))
 
-
-function clearForm(event = "") {
+export function clearForm(event = "") {
     document.getElementById('form-button').disabled = true;
     if (event) event.stopPropagation();
 
@@ -78,6 +57,20 @@ function clearForm(event = "") {
     }
 }
 
+function validateFormCheck() {
+    const inputs = Array.from(registrationForm).filter((element) => element.tagName === "INPUT"
+        && element.type !== "submit" && element.type !== "reset");
+    const validationResult = inputs.every((input) => input.classList.contains('valid'));
+    document.getElementById('form-button').disabled = !(validationResult && pass.value === passConfirm.value);
+}
 
-export {clearForm}
+function showPassword(event) {
+    if (event.target.tagName !== 'BUTTON') return;
+    const currentButton = event.target;
+    const currentInput = document.getElementById(`${currentButton.id}word`)
+    const value = currentInput.value;
+    currentInput.type = currentInput.type === 'password' ? 'text' : 'password';
+    currentInput.value = value;
+    currentButton.classList.toggle('open');
+}
 
