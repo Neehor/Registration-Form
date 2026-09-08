@@ -34,6 +34,8 @@ git clone https://github.com/Neehor/Registration-Form.git
 
 Open `registration.html` in your browser.
 
+Demo: https://neehor.github.io/Registration-Form/
+
 ## 📌 Project requirements
 
 - Registration form fields:
